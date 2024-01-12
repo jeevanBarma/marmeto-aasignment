@@ -1,0 +1,142 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 1em bold sans-serif;
+    margin-top: 2em;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchbar {
+    width: 35%;
+    height: 28.7px;
+    border-radius: 5px;
+    border: 2px solid;
+    outline: none;
+    max-width: 75%;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.products-container {
+    margin: 2em 20em;
+    max-width: 100%;
+    border: 1.5px solid #000;
+    border-radius: 4px;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.list-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em 5em;
+}
+
+.grid-view {
+    display: grid;
+    /* Default to grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* Grid layout settings */
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 1em 2em;
+}
+
+
+
+.list-product-card {
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin-bottom: 10px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    align-items: center;
+    text-align: center;
+}
+
+.grid-product-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width:250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+
+}
+
+
+.list-product-card img,
+.grid-product-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    grid-column: 1;
+    grid-row: 1/3;
+}
+
+.badge {
+    background-color: #abfe79;
+    color: #000;
+    padding: 5px;
+    border-radius: 0px 10px 10px 10px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    grid-column: 1;
+    width: 5em;
+    height: 2em;
+    grid-row: 1;
+    box-shadow: 3px 3px 5px #ccc;
+}
+
+h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    grid-column: 2;
+    text-align: left;
+    margin-left: 4%;
+    grid-row: 1;
+}
+
+.product-variants {
+    font-size: 16px;
+    grid-column: 2;
+    text-align: left;
+    margin-left: 4%;
+    font-weight: 100;
+    letter-spacing: 1px;
+    grid-row: 2;
+}
+
+.highlight {
+    background-color: #abfe79;
+    color: #111;
+    font-weight: bold;
+    padding: 2px;
+}
